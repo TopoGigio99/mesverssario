@@ -1,0 +1,115 @@
+/* Fonte principal e secundária */
+:root {
+    --primary-font: 'Dancing Script', cursive;
+    --secondary-font: 'Poppins', sans-serif;
+    --primary-color: #ff4d4d; /* Vermelho */
+    --secondary-color: #1a1a1a; /* Preto */
+    --background-color: #000000; /* Fundo */
+}
+
+body {
+    font-family: var(--secondary-font);
+    background-color: var(--background-color);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+header h1 {
+    font-family: var(--primary-font);
+    font-size: 3rem;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+#texto p {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #ffcccc;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
+}
+
+/* Galeria de Fotos */
+.fotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 15px; /* Espaçamento entre as fotos */
+    margin: 20px auto;
+    max-width: 900px; /* Largura máxima para centralizar */
+}
+
+.fotos img {
+    width: 100%; /* Fotos ocupam o espaço disponível */
+    aspect-ratio: 1 / 1; /* Força a proporção 1:1 (quadrada) */
+    object-fit: cover; /* Corta a imagem para caber no espaço */
+    border-radius: 10px; /* Bordas arredondadas */
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 4px 10px rgba(255, 77, 77, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.fotos img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Timer */
+#contador {
+    font-size: 2rem;
+    color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: #ffcccc;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-family: var(--secondary-font);
+}
+
+#qr-code {
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a; /* Fundo escuro */
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(255, 77, 77, 0.5);
+    max-width: 400px; /* Limita a largura */
+}
+
+#reader {
+    width: 100%;
+    height: auto;
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(255, 77, 77, 0.5);
+}
